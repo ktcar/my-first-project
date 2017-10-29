@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>도서신청목록</h1>
+{% if item_list %}
+    {% for items in item_list %}
+    ISBN : <a href="/price/{{ items.isbn_id }}/">{{ items.isbn_id }}</a> - 책이름 : {{ items.title }}<br>
+    {% endfor %}
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>상품정보</h1>
+상품명 : {{ item.title }}<br>
+링크 : <a href="{{ item.link }}">{{ item.link }}</a><br>
+이미지 : <img src="{{ item.image }}" height="300px"><br>
+네이버지식쇼핑 정가 : {{ item.price }}<br>
+네이버지식쇼핑 할인금액 : {{ item.discount }}<br>
+출판사 : {{ item.publisher }}<br>
+isbn : {{ item.isbn }}<br>
+출시일 : {{ item.pubdate }}
+도서관 입고 요청 일 : {{ item.searchDate }}
+책 소개 : {{ item.description }}<br>
+
+</body>
+</html>
